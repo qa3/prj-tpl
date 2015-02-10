@@ -4,16 +4,9 @@
   "indent": 2,
   "maxlen": 80,
   "unused": true,
-
   "undef": true,
   "browser": true,
   "dojo": true,
   "devel": true,
-  "debug": true,
-  "globals": {
-    "_": false,
-    "Backbone": false
-  },
-
-
+  "debug": true
 }
