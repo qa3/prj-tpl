@@ -1,10 +1,9 @@
-# jdstylcofstrap
-Jade + Stylus + Coffeescript + Bootstrap3 with Gulpjs
-
+# prj name
+description
 
 ## usage
 ```shell
-				npm install 
+$ npm install
 ```
 
 
