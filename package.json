@@ -1,0 +1,50 @@
+{
+  "name": "prj name",
+  "version": "0.0.1",
+  "description": "prj desc",
+  "keywords": ["●, ●, ●"],
+  "main": "gulpfile.js",
+  "scripts":{
+    "start": "",
+    "postinstall": "bower install && preen",
+    "concat": "gulp scripts",
+    "test":  "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "qa3",
+    "email": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "*",
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cached": "*",
+    "gulp-concat": "*",
+    "gulp-coffeelint": "*",
+    "gulp-csso": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-load-plugins": "*",
+    "gulp-notify": "*",
+    "gulp-open": "*",
+    "gulp-prettify": "*",
+    "gulp-pleeease": "*",
+    "gulp-rename": "*",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-shell": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-sass": "*",
+    "gulp-stylus": "*",
+    "gulp.spritesmith": "*",
+    "gulp-plumber": "*",
+    "gulp-uglify": "*",
+    "gulp-uncss": "*",
+    "gulp-webp": "*",
+    "marked": "*",
+    "preen": "*"
+  }
+}
