@@ -6,4 +6,3 @@ description
 $ npm install
 ```
 
-

@@ -4,8 +4,10 @@ $ = require("gulp-load-plugins")(
   replaceString: /\bgulp[\-.]/
 )
 
+ps = require 'psi'
 bs  = require 'browser-sync'
 
+#browser-sync
 g.task "bs", ->
   bs
     server:
@@ -42,6 +44,12 @@ g.task "cl", ->
   .pipe $.cached(cl)
   .pipe $.coffeelint()
   .pipe $.coffeelint.reporter()
+
+#pagespeed
+gulp.task 'ps', ps.bind(null,
+  url: 'https://example.com'
+  strategy: 'mobile')
+
 
 #-------------------
 # cmd task

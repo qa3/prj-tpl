@@ -11,11 +11,11 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{md,markdown}]
-indent_style = tab
-indent_size = 1
-trim_trailing_whitespace = false
+#[*.{md,markdown}]
+#indent_style = tab
+#indent_size = 1
+#trim_trailing_whitespace = false
 
-[*.{jade,rb,inc}]
-indent_style = tab
-indent_size = 2
+#[*.{jade,inc}]
+#indent_style = tab
+#indent_size = 2

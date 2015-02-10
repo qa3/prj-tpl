@@ -45,6 +45,8 @@
     "gulp-uncss": "*",
     "gulp-webp": "*",
     "marked": "*",
+    "psi": "*",
     "preen": "*"
-  }
+  },
+  "private": true
 }
