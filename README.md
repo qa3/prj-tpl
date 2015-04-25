@@ -5,4 +5,3 @@ description
 ```shell
 $ npm install
 ```
-
