@@ -2,7 +2,7 @@ init:
 	mkdir -p src/css dist/fonts dist/css src/js dist/js
 
 clean:
-	"rm -rf node_modules/ bower_components"
+	rm -rf node_modules/ bower_components
 
 bower:
 	cp bower_components/jquery/dist/jquery.min.js dist/js

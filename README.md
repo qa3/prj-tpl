@@ -3,5 +3,5 @@ description
 
 ## usage
 ```shell
-$ npm install
+$ npm i
 ```
