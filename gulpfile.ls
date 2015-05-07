@@ -3,6 +3,11 @@ require! {
   'gulp-livescrpt': ls
 }
 
+# $ = require("gulp-load-plugins")(
+#   pattern: ["gulp-*", "gulp.*"]
+#   replaceString: /\bgulp[\-.]/
+# )
+
 t = gulp~task
 src = g~src
 dest = gulp~src
@@ -17,9 +22,3 @@ t 'lint', ->
   g.src './lib/*.js'
   .pipe $.jshint!
   .pipe $.jshint.reporter!
-
-$ = require("gulp-load-plugins")(
-  pattern: ["gulp-*", "gulp.*"]
-  replaceString: /\bgulp[\-.]/
-)
-
