@@ -1,6 +1,6 @@
 require! {
   gulp
-  'gulp-livescrpt': ls
+  'gulp-livescript': ls
 }
 
 # $ = require("gulp-load-plugins")(
@@ -10,15 +10,12 @@ require! {
 
 t = gulp~task
 src = g~src
-dest = gulp~src
+dest = gulp~dest
 
 $ = (require 'gulp-load-plugins') {
   pattern: ['gulp-*', 'gulp.*']
   replaceString: //\bgulp[\-.]//
 }
 
-
-t 'lint', ->
+t 'task', ->
   g.src './lib/*.js'
-  .pipe $.jshint!
-  .pipe $.jshint.reporter!
