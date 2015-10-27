@@ -18,7 +18,6 @@
     "lsc": "./bin/lsc"
   },
   "scripts": {
-    "glp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -29,7 +28,9 @@
     "gulp-uglify": "*",
     "gulp-load-plugins": "*",
     "gulp-jade": "*",
+    "gulp-livescript": "*",
     "gulp-plumber": "*",
+    "gulp-stylus": "*",
     "pipe-joint": "*",
     "jade": "*",
     "livescript": "*"
