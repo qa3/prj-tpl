@@ -15,18 +15,19 @@ bin:
   lsc: './bin/lsc'
 
 scripts:
-  glp: "gulp",
   test: "echo \"Error: no test specified\" && exit 1"
-  postinstall: 'bower install && preen'
 
 devDependencies:
-  "Livescript": \*
-  "coffee-script": \*
   react: \*
   babel: \*
-  "jade-babel": "*"
   "browser-sync": "*"
   gulp: "*"
   "gulp-uglify": "*"
-  preen: "*"
+  "gulp-load-plugins":"*"
+  "gulp-jade": "*"
+  "gulp-plumber": "*"
+  "pipe-joint": "*"
+  "jade": "*"
+  "livescript": "*"
+
 

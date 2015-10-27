@@ -16,10 +16,11 @@ insert_final_newline = true
 #indent_size = 1
 #trim_trailing_whitespace = false
 
-[*.{jade,inc,go}]
+[*.{jade,inc,go,amber,slim,ls}]
 indent_style = tab
 indent_size = 2
 
 [Makefile]
 indent_style = tab
 indent_size = 2
+
