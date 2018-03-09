@@ -1,6 +1,5 @@
-Name
+prj-tpl
 ====
-
 
 install some dependencies.
 
