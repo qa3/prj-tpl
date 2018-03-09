@@ -4,13 +4,8 @@ require!{
 	"browser-sync": browserSync
 	"pipe-joint": p
 	}
-
-
-# shorthand
-dest    = gulp~dest
-src     = gulp~src
-task    = gulp~task
-watch   = gulp~watch
+site = ''
+portVal = 3333
 
 # shorthand
 t = gulp~task
@@ -20,12 +15,13 @@ w = gulp~watch
 
 # path
 paths =
-	tplSrc: 'src/layout/**'
-	htmlSrc: 'src/tpl/*.jade'
-	jsSrc: 'src/styles/*.js'
+	tplSrc: 'src/layouts/**'
+	htmlSrc: 'src/lauouts/*.pug'
+	stylSrc: 'src/styles/*.styl'
+	cssSrc: 'src/styles/*.css'
+	sassSrc: 'src/styles/*.scss'
+	jsSrc: 'src/scripts/*.js'
 	imgSrc: 'src/images/**'
-	rootDir: 'dist/'
-	imgDir: 'dist/images'
 
 
 # gulp-load-plugins
@@ -34,37 +30,29 @@ $ = require("gulp-load-plugins")(
 	replaceString: /\bgulp[\-.]/
 )
 
-t 'jade' -> p [
-	s 'src/layout/*.jade'
+t 'pug' -> p [
+	s './*.pug'
 	$.plumber!
-	$.jade {pretty: true}
-	d 'dist/'
-]
-
-t 'stylus' -> p [
-	s 'src/styles/*.styl'
-		$.stylus!
-		d 'dist/css'
-]
-
-
-t 'ls' -> p [
-	s 'src/scripts/*.ls'
-	$.livescript bare: true
-	d 'dist/js'
+	$.pug {pretty: true}
+	# $.htmlmin collapseWhitespace: true
+	d './'
 ]
 
 
 t 'watch' ->
-	w 'src/layout/*.jade', ['jade']
-	w 'src/styles/*.styl', ['stylus']
-	w 'src/scripts/*.ls', ['ls']
+	w '*.pug', ['pug']
 
-t 'browser-sync', ->
+t 'bs-reload', ->
+	bs.reload()
+
+t 'bsync', ->
 	file = 'index.html'
-	browserSync.init file,
-		server: {baseDir: 'dist'}
+	bs.init file,
+		server: {baseDir: '.'}
 		port: 3333
 
 
-t 'default', ['jade', 'watch', 'browser-sync']
+t 'default', ['pug', 'bsync'], ->
+	w './*.pug', ['pug']
+	w './*.html', ['bs-reload']
+

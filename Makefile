@@ -4,9 +4,6 @@ init:
 clean:
 	rm -rf node_modules/ bower_components
 
-bower:
-	cp bower_components/jquery/dist/jquery.min.js dist/js
-
 pkgji: package.json
 	make pkgj && npm i
 

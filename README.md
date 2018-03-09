@@ -21,4 +21,4 @@ MIT
 
 ## Author
 
-[qa3qq](https://github.com/qa3qq)
+[qa3qq](https://github.com/qa3)

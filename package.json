@@ -9,30 +9,28 @@
   ],
   "author": {
     "name": "qa3qq",
-    "url": "http://qa3qq.github.io"
   },
   "private": true,
   "license": "MIT",
   "main": "index.js",
-  "bin": {
-    "lsc": "./bin/lsc"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "react": "*",
-    "babel": "*",
-    "browser-sync": "*",
-    "gulp": "*",
-    "gulp-uglify": "*",
-    "gulp-load-plugins": "*",
-    "gulp-jade": "*",
-    "gulp-livescript": "*",
-    "gulp-plumber": "*",
-    "gulp-stylus": "*",
-    "pipe-joint": "*",
-    "jade": "*",
-    "livescript": "*"
+    "browser-sync": "",
+    "font-awesome": "",
+    "gulp": "",
+    "gulp-htmlmin": "",
+    "gulp-livescript": "",
+    "gulp-load-plugins": "",
+    "gulp-plumber": "",
+    "gulp-pug": "",
+    "gulp-uglify": "",
+    "jquery": "",
+    "livescript": "",
+    "pipe-joint": "",
+    "pug": "",
+    "puppeteer": "",
+    "stylus": ""
   }
 }
