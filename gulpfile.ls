@@ -1,8 +1,8 @@
+require! <[ gulp ]>
 require!{
-	gulp
-	"gulp-util":gutil
-	"browser-sync": browserSync
+	"browser-sync": bs
 	"pipe-joint": p
+	"sc5-styleguide": sg
 	}
 site = ''
 portVal = 3333
