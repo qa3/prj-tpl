@@ -2,15 +2,6 @@
   "name": "prj_name",
   "version": "1.0.0",
   "description": "prj tpl",
-  "keywords": [
-    "",
-    "",
-    ""
-  ],
-  "author": {
-    "name": "qa3qq",
-  },
-  "private": true,
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -29,8 +20,6 @@
     "jquery": "",
     "livescript": "",
     "pipe-joint": "",
-    "pug": "",
-    "puppeteer": "",
-    "stylus": ""
+    "pug": ""
   }
 }

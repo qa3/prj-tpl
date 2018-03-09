@@ -47,5 +47,8 @@ logs
 results
 build
 
+yarn.lock
+yarn-error.log
+
 # other
 MM.md

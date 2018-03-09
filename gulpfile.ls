@@ -2,7 +2,6 @@ require! <[ gulp ]>
 require!{
 	"browser-sync": bs
 	"pipe-joint": p
-	"sc5-styleguide": sg
 	}
 site = ''
 portVal = 3333
@@ -33,7 +32,8 @@ $ = require("gulp-load-plugins")(
 t 'pug' -> p [
 	s './*.pug'
 	$.plumber!
-	$.pug {pretty: true}
+	# $.pug {pretty: true}
+	$.pug {pretty: false}
 	# $.htmlmin collapseWhitespace: true
 	d './'
 ]

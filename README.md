@@ -2,10 +2,15 @@ Name
 ====
 
 
+install some dependencies.
+
 ```shellscript
- $ npm i
+  $ yarn install
 
+```
 
+```shellscript
+  gulp
 ```
 
 ## Description

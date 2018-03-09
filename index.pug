@@ -1,0 +1,170 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title gulp prj
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    //- link(href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet")
+  body
+    header
+      // navbar
+      nav.navbar.navbar-expand-lg.bg-primary
+        .container
+          a.navbar-brand.text-white(href="#") site title
+          button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+              li.nav-item
+                button.btn.btn-primary(type="button")
+                  | About
+              li.nav-item.dropdown
+                a#dropdown01.nav-link.dropdown-toggle.text-white(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Menu
+                .dropdown-menu.text-white(aria-labelledby="dropdown01")
+                  a.dropdown-item(href="#") 項目
+                  a.dropdown-item(href="#") 項目
+                  a.dropdown-item(href="#") 項目
+                  a.dropdown-item(href="#") 項目
+                  a.dropdown-item(href="#") 項目
+            form.form-inline.m-0
+              input.form-control.mr-2(type="text" placeholder="キーワードを入力")
+              button.btn.btn-success(type="submit") 検索
+      section
+      .py-5.text-center.jumbotron
+        .container.py-5
+          .row
+            .col-md-12
+              h1.display-3.mb-4 lorem ipsum
+              p.lead.mb-5
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, veniam, aliquid,
+                br
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, veniam, aliquid,
+    main
+      // table
+      section.bg-light.text-center.py-5
+        h2.mb-5 Plans
+        .container
+          table.table.table-hover
+            thead
+              tr
+                th Plan A
+                th Plan B
+                th Plan C
+            tbody
+              tr
+                td AA
+                td BB
+                td CC
+              tr
+                td AAA
+                td BBB
+                td CCC
+              tr
+                td AAAA
+                td BBBB
+                td CCCC
+      // tabmenu
+      // data-toggle="tab" タブ切り替え
+      section.py-5
+        h2.mb-5.text-center Lorem ipsum
+        .container
+          ul.nav.nav-tabs
+            li.nav-item
+              a.nav-link.active(href="#ios" data-toggle="tab") iOS
+            li.nav-item
+              a.nav-link(href="#android" data-toggle="tab") Android
+          .tab-content.py-4
+            #ios.tab-pane.active
+              p
+                | Hello iOS. Hello iOS.
+                span.font-weight-bold.text-info(data-toggle="tooltip" data-placement="bottom" title="This is tooltip text.") Hello iOS. Hello iOS.
+                |  Hello iOS. Hello iOS. Hello iOS. Hello iOS.
+            #android.tab-pane
+              p
+                | Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android.
+      section.text-center
+        .container
+          .row
+            - for (var x = 0; x < 3; x++)
+              .col-lg-4
+                img.rounded-circle(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140")
+                h2 Heading
+                p
+                  | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                p
+                  a.btn.btn-secondary(href="#" role="button") View details »
+
+      //- card
+      section.py-5
+        .container
+          .row
+            - for (var x = 0; x < 4; x++)
+              .col
+                .card
+                  img.card-img-top(src="https://placehold.it/200x150/" alt="Card image cap")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text
+                      | Some quick example text to build on the card title and make up the bulk of the card's content.
+                    a.btn.btn-primary(href="#") Go somewhere
+      //- card 2
+      section
+        .container
+          .row
+            - for (var x = 0; x < 4; x++)
+              .col
+                .card
+                  img.card-img-top(src="https://placehold.it/200x150/" alt="Card image cap")
+                  .card-body
+                    p.card-text
+                      | Some quick example text to build on the card title and make up the bulk of the card's content.
+      section.py-5
+        .col.col-md-12
+          .row
+            .col
+              .card.card-block
+                h3.card-title title text
+                p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, veniam, aliquid, excepturi sequi sapiente culpa quam repellat architecto sit illo molestias nostrum consectetur nisi laborum fugit molestiae iste dicta expedita!
+                a.btn.btn-primary(href="#") Go somewhere
+            .col
+              .card.card-block
+                h3.card-title title text
+                p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, veniam, aliquid, excepturi sequi sapiente culpa quam repellat architecto sit illo molestias nostrum consectetur nisi laborum fugit molestiae iste dicta expedita!
+                a.btn.btn-primary(href="#") Go somewhere
+      section.py-5
+        // pagenation
+        nav(aria-label="pagenav")
+          ul.pagination.justify-content-center
+            li.page-item.disabled
+              a.page-link(href="#" tabindex="-1") <
+            li.page-item
+              a.page-link(href="#") 1
+            li.page-item
+              a.page-link(href="#") 2
+            li.page-item
+              a.page-link(href="#") 3
+            li.page-item
+              a.page-link(href="#") >
+
+
+    footer.text-center.text-muted.py-4
+      .footer-info.text-center.align-items-center
+        span.w-25
+        span.w-50
+          Copyright © 【Name】 All Rights Reserved.
+          a(href="#" class="m-2") トップ
+          a(href="#" class="m-2") サポート
+          a(href="#" class="m-2") 利用規約
+          a(href="#" class="m-2") プライバシーポリシー
+          a(href="#" class="m-2") お問い合わせ
+        span.w-25
+      // back to top
+      ul.float-lg-right
+        a(href="#top") Back to top
+          .container.text-center
+
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+
